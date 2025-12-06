@@ -1,0 +1,182 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+  --colorPrincipal: #15a7ac;
+  --colorSecundario: rgb(38, 120, 228);
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* header 
+.index-header{
+  height: 95vh;
+}*/
+
+.nutriCocoLogo{
+  font-size: 2rem;
+}
+
+.index-h1{
+  font-weight: 400;
+  color: black;   /* corregido */
+}
+
+.index-h1 span{
+  color: var(--colorPrincipal);
+  font-weight: 700;
+}
+
+.index-header-despripcion{
+  color: rgba(71, 71, 71, 0.747);
+}
+
+/* BOTONES */
+.index-header-btn,
+.index-header-btn-elegirnos{
+  background-color: var(--colorPrincipal);
+  border: var(--colorPrincipal);
+  color: beige;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+  margin: 0.3rem;
+}
+
+.index-header-btn-elegirnos{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--colorPrincipal); /* corregido */
+  color: var(--colorSecundario);
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.cocoheaderimg{
+    width: 90%;
+    max-width: 20rem;
+
+}
+
+.contenerdor-flex{
+    display: flex;
+    align-items: center;
+    gap:3rem;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contenedor-inferior-header{
+    width: 90%;
+    margin:1rem;
+    ;
+}
+
+.header-contenedor-inferior-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* .header-contenedor-inferior-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* main */
+.productos-titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.productos-titulo span{
+    color: var(--colorPrincipal);
+}
+ 
+.productos-titulo-descripcion{
+    text-align: center;
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+.producto-card{
+width: 28rem;
+text-align: center;
+padding: 0.2rem;
+background-color: aquamarine;
+}
+.producto-card-img{
+    height: 20rem;
+
+}
+
+.producto-card-titulo{
+    margin-bottom: 0;
+}
+
+.producto-card-precio{
+color: green;
+}
+.oferta{
+    text-decoration: line-through;
+    color: gray;
+    text-decoration-thickness: 0.15rem;
+}
+
+.producto-card-boton{
+    font-size: 1rem;
+    background-color: var(--colorPrincipal);
+    color: white;
+
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+}
+.contenerdor-flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+@media only screen and (min-width:500px){
+    ul{
+        /* display: flex; */
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width:900px){
+    .contenerdor-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-left:2rem ;
+    }
+
+    .header-contenedor-inferior-flex{
+        max-width: 40rem;
+        flex-direction: row;
+        justify-content: center;
+        height: 50vph;
+    }
+}
